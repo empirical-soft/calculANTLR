@@ -1,0 +1,8 @@
+-- abstract syntax tree
+module AST
+{
+  -- algebraic data types
+  expr = BinOp(expr left, operator op, expr right)
+       | IntLit(int n)
+  operator = Add | Sub | Mult | Div
+}
